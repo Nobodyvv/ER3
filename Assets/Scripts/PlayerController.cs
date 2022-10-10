@@ -7,6 +7,12 @@ public class PlayerController : MonoBehaviour
     public GameObject groundchecker;
     public LayerMask whatIsGround;
 
+    public AudioClip jump;
+    public AudioClip backgroundMusic;
+
+    public AudioSource sfxPlayer;
+    public AudioSource musicPlayer;
+
     float maxSpeed = 5.0f;
     bool isOnGround = false;
 
@@ -24,6 +30,10 @@ public class PlayerController : MonoBehaviour
         playerObject = GetComponent<Rigidbody2D>();
 
         anim = GetComponent<Animator>();
+
+        musicPlayer.clip = backgroundMusic;
+        musicPlayer.loop = true;
+        musicPlayer.Play();
     }
 
     // Update is called once per frame
