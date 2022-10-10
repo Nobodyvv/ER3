@@ -70,5 +70,15 @@ public class PlayerController : MonoBehaviour
         {
             playerObject.AddForce(new Vector2(0.0f, jumpForce));
         }
-    }
+
+       
+    } 
+    
+    public void OnTriggerEnter2D(Collider2D collision)
+        {
+            if(collision.gameObject.tag == "PickUp")
+            {
+                Destroy(collision.gameObject);
+            }
+        }
 }
