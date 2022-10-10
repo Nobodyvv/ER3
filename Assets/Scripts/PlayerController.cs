@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     float maxSpeed = 5.0f;
     bool isOnGround = false;
 
+    public ScoreManager theScoreManager;
+   
+
     public float jumpForce = 400f;
 
     //Create a reference to the Rigidbody2D so we can manipulate it
@@ -34,6 +37,12 @@ public class PlayerController : MonoBehaviour
         musicPlayer.clip = backgroundMusic;
         musicPlayer.loop = true;
         musicPlayer.Play();
+
+        theScoreManager.scoreIncreasing = false;
+        theScoreManager.scorecount = 0;
+        theScoreManager.scoreIncreasing = true;
+
+
     }
 
     // Update is called once per frame
@@ -78,6 +87,7 @@ public class PlayerController : MonoBehaviour
         {
             if(collision.gameObject.tag == "PickUp")
             {
+            theScoreManager.scorecount += 10f;
                 Destroy(collision.gameObject);
             }
         }
