@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45a8b4c3c689c245947322afdf79c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.03
 --- !u!1 &415452190
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,7 +661,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 5a2ada5f3758f9241b75a6088f77fc62, type: 3}
+  m_Sprite: {fileID: 6889159557818151914, guid: c7d2b3596932b8549ae37c31bb59479e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -704,7 +704,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.6875, y: 1.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   - {fileID: 925304752396634804, guid: ef8b196af22800f47b3ac9f1078e0779, type: 3}
   - {fileID: 4114324230604172805, guid: a7057765352faf6459dc25a6b94b4707, type: 3}
   - {fileID: 79059949284656077, guid: e47173d5d2acaea438282afbc9c6bec5, type: 3}
-  minSpawnTime: 0.5
+  minSpawnTime: 0.6
   maxSpawnTime: 3
 --- !u!1 &1184927706
 GameObject:
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 79059949284656077, guid: e47173d5d2acaea438282afbc9c6bec5, type: 3}
-  minSpawnTime: 0.5
+  minSpawnTime: 1
   maxSpawnTime: 3
 --- !u!1 &1247582060
 GameObject:
@@ -1719,7 +1719,7 @@ MonoBehaviour:
   - {fileID: 925304752396634804, guid: ef8b196af22800f47b3ac9f1078e0779, type: 3}
   - {fileID: 4114324230604172805, guid: a7057765352faf6459dc25a6b94b4707, type: 3}
   - {fileID: 79059949284656077, guid: e47173d5d2acaea438282afbc9c6bec5, type: 3}
-  minSpawnTime: 0.7
+  minSpawnTime: 0.9
   maxSpawnTime: 4
 --- !u!4 &1675241234
 Transform:
