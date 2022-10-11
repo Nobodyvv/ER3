@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7215555590732045571}
   - component: {fileID: 3440245541710355975}
   - component: {fileID: -2136810224806512662}
+  - component: {fileID: 2578532628904323566}
+  - component: {fileID: 5982694346034843741}
   m_Layer: 0
   m_Name: Circle
   m_TagString: PickUp
@@ -109,3 +111,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.15, y: 1.23}
   m_EdgeRadius: 0
+--- !u!114 &2578532628904323566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231303711403306625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3782ed5e91a540e42afe8a18cc086c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToGive: 0
+--- !u!114 &5982694346034843741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231303711403306625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3782ed5e91a540e42afe8a18cc086c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreToGive: 10
