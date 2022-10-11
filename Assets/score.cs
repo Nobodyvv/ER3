@@ -19,7 +19,7 @@ public class score : MonoBehaviour
     {
         //your score == your player possition on the x axsis
         scorea = player.transform.localPosition.x;
-        scoree = (scorea.ToString(0));
+      
 
     }
 }
