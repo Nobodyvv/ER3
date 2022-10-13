@@ -18,4 +18,8 @@ using UnityEngine.SceneManagement;
     {
         SceneManager.LoadScene(0);
     }
+    public void credits()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
