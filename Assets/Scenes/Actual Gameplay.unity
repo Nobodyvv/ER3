@@ -603,8 +603,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 231303711403306625, guid: 821154b9031d725488bd554921ff340c, type: 3}
-  minSpawnTime: 2
-  maxSpawnTime: 5
+  minSpawnDistance: 11
+  maxSpawnDistance: 25
 --- !u!1 &410852141
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,9 +932,10 @@ MonoBehaviour:
     m_Bits: 256
   jump: {fileID: 8300000, guid: 8dc7eca6f4dd88d4399b0c409cb61978, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 8dc7eca6f4dd88d4399b0c409cb61978, type: 3}
+  maxJumps: 2
   sfxPlayer: {fileID: 197208859}
   musicPlayer: {fileID: 197208859}
-  jumpForce: 500
+  jumpForce: 350
 --- !u!95 &479267633
 Animator:
   serializedVersion: 3
@@ -1290,8 +1291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 231303711403306625, guid: 821154b9031d725488bd554921ff340c, type: 3}
-  minSpawnTime: 3
-  maxSpawnTime: 6
+  minSpawnDistance: 19
+  maxSpawnDistance: 30
 --- !u!1 &1033640983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,8 +1338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 231303711403306625, guid: 821154b9031d725488bd554921ff340c, type: 3}
-  minSpawnTime: 5
-  maxSpawnTime: 7
+  minSpawnDistance: 15
+  maxSpawnDistance: 20
 --- !u!1 &1066742224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,8 +1575,8 @@ MonoBehaviour:
   - {fileID: 925304752396634804, guid: ef8b196af22800f47b3ac9f1078e0779, type: 3}
   - {fileID: 4114324230604172805, guid: a7057765352faf6459dc25a6b94b4707, type: 3}
   - {fileID: 79059949284656077, guid: e47173d5d2acaea438282afbc9c6bec5, type: 3}
-  minSpawnTime: 1.5
-  maxSpawnTime: 3.5
+  minSpawnDistance: 11
+  maxSpawnDistance: 12
 --- !u!1 &1184927706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,8 +1622,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 79059949284656077, guid: e47173d5d2acaea438282afbc9c6bec5, type: 3}
-  minSpawnTime: 1.4
-  maxSpawnTime: 2
+  minSpawnDistance: 8
+  maxSpawnDistance: 10
 --- !u!1 &1247582060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,12 +2146,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: edca07e8915047b488c3fd42c8c5e376, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2175,15 +2176,15 @@ RectTransform:
   m_GameObject: {fileID: 1497907003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6027, y: 1.6027, z: 1.6027}
   m_Children: []
   m_Father: {fileID: 292870777}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 97.100006, y: -30.899994}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 189.2, y: -41.9}
+  m_SizeDelta: {x: 203.6202, y: 50.9604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1675241232
 GameObject:
@@ -2218,8 +2219,8 @@ MonoBehaviour:
   - {fileID: 925304752396634804, guid: ef8b196af22800f47b3ac9f1078e0779, type: 3}
   - {fileID: 4114324230604172805, guid: a7057765352faf6459dc25a6b94b4707, type: 3}
   - {fileID: 79059949284656077, guid: e47173d5d2acaea438282afbc9c6bec5, type: 3}
-  minSpawnTime: 0.9
-  maxSpawnTime: 3
+  minSpawnDistance: 7
+  maxSpawnDistance: 12
 --- !u!4 &1675241234
 Transform:
   m_ObjectHideFlags: 0
