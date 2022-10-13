@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     public AudioClip jump;
     public AudioClip backgroundMusic;
 
+    int jumpsUsed;
+    public int maxJumps;
+
     public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
 
@@ -56,7 +59,12 @@ public class PlayerController : MonoBehaviour
         playerObject.velocity = new Vector2(movementValueX*maxSpeed, playerObject.velocity.y);
 
         //check to see if the ground check object is touching the ground
-        isOnGround = Physics2D.OverlapCircle(groundchecker.transform.position, 1.0f, whatIsGround);
+        isOnGround = Physics2D.OverlapCircle(groundchecker.transform.position, 0.5f, whatIsGround);
+
+        if (isOnGround)
+        {
+            jumpsUsed = 0;
+        }
 
         
 
@@ -66,9 +74,11 @@ public class PlayerController : MonoBehaviour
 
         //Set movementValueX to 1.0f, so that we always run forward and no longer care about player input
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true)
+        if (Input.GetKeyDown(KeyCode.Space) && (isOnGround == true || jumpsUsed < maxJumps))
         {
             playerObject.AddForce(new Vector2(0.0f, jumpForce));
+
+            jumpsUsed = jumpsUsed + 1;
         }
 
        
