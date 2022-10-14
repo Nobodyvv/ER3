@@ -7,6 +7,9 @@ public class ScoreManager : MonoBehaviour
 {
     public Text scoreText;
 
+    public GameObject controls;
+    public float controlDisappear = 3f;
+
     public float scoreCount;
 
     public float pointsPerSecond;
@@ -22,6 +25,12 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        controlDisappear -= Time.deltaTime;
+        if (controlDisappear <= 0)
+        {
+            controls.SetActive(false);
+        }
+
         scoreCount += pointsPerSecond * Time.deltaTime;
 
 
